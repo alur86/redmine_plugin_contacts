@@ -87,6 +87,9 @@ else
   warn("Please configure your config/database.yml first")
 end
 
+
+
+
 group :development do
   gem "rdoc", "~> 4.3"
   gem "yard"
