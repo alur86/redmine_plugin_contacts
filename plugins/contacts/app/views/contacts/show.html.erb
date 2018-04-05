@@ -1,0 +1,76 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+<strong>Users:</strong> <br />
+
+<%= select_tag 'user_id', options_from_collection_for_select(@users, :id, :name, 2) %>
+</p>
+<br />
+<p>
+  <strong>Projects </strong><br />
+
+<%= select_tag 'project_id', options_from_collection_for_select(@projects, :id, :name, 2) %>
+</p>
+
+
+<p>
+  <strong>Email:</strong>
+  <%= @contact.email %>
+</p>
+
+
+<p>
+ <strong>Phone:</strong>
+  <%= @contact.phone %>
+ </p>
+
+<p>
+  <strong>Additinal Phone:</strong>
+  <%= @contact.phone_add %>
+</p>
+
+<p>
+ <strong>Skype:</strong>
+  <%= @contact.skype %>
+<p>
+
+
+<p>
+ <strong>Web:</strong>
+  <%= @contact.web %>
+<p>
+
+
+<p>
+ <strong>Skype:</strong>
+  <%= @contact.skype %>
+<p>
+
+
+<p>
+ <strong>Address:</strong>
+  <%= @contact.address %>
+<p>
+
+<p>
+ <strong>City:</strong>
+  <%= @contact.city %>
+<p>
+
+<p>
+ <strong>Region:</strong>
+  <%= @contact.region %>
+<p>
+
+
+<p>
+ <strong>Country:</strong>
+  <%= @contact.country %>
+<p>
+
+
+<%= link_to 'Edit', edit_contact_path(@contact) %> |
+<%= link_to 'Back', contacts_path %>
+
+
+
